@@ -1,0 +1,51 @@
+[16-Sep-2016 20:03:28 America/Chicago] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '30.3%22S+57%C2%B032'38.1%22W/@-25.2417426,-57.5445737,18z/data=!3m1!4b1!4m5!3m4!' at line 1' in /home/argor/public_html/admin/ajax/locales-ajax.php:128
+Stack trace:
+#0 /home/argor/public_html/admin/ajax/locales-ajax.php(128): PDO->exec('UPDATE locales ...')
+#1 {main}
+  thrown in /home/argor/public_html/admin/ajax/locales-ajax.php on line 128
+[16-Sep-2016 20:03:47 America/Chicago] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '30.3%22S+57%C2%B032'38.1%22W/@-25.2417426,-57.5445737,18z/data=!3m1!4b1!4m5!3m4!' at line 1' in /home/argor/public_html/admin/ajax/locales-ajax.php:128
+Stack trace:
+#0 /home/argor/public_html/admin/ajax/locales-ajax.php(128): PDO->exec('UPDATE locales ...')
+#1 {main}
+  thrown in /home/argor/public_html/admin/ajax/locales-ajax.php on line 128
+[16-Sep-2016 20:03:52 America/Chicago] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '30.3%22S+57%C2%B032'38.1%22W/@-25.2417426,-57.5445737,18z/data=!3m1!4b1!4m5!3m4!' at line 1' in /home/argor/public_html/admin/ajax/locales-ajax.php:128
+Stack trace:
+#0 /home/argor/public_html/admin/ajax/locales-ajax.php(128): PDO->exec('UPDATE locales ...')
+#1 {main}
+  thrown in /home/argor/public_html/admin/ajax/locales-ajax.php on line 128
+[16-Sep-2016 20:07:12 America/Chicago] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '30.3%22S+57%C2%B032'38.1%22W/@-25.2417426,-57.5445737,18z/data=!3m1!4b1!4m5!3m4!' at line 1' in /home/argor/public_html/admin/ajax/locales-ajax.php:128
+Stack trace:
+#0 /home/argor/public_html/admin/ajax/locales-ajax.php(128): PDO->exec('UPDATE locales ...')
+#1 {main}
+  thrown in /home/argor/public_html/admin/ajax/locales-ajax.php on line 128
+[16-Sep-2016 20:07:21 America/Chicago] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '30.3%22S+57%C2%B032'38.1%22W/@-25.2417426,-57.5445737,18z/data=!3m1!4b1!4m5!3m4!' at line 1' in /home/argor/public_html/admin/ajax/locales-ajax.php:128
+Stack trace:
+#0 /home/argor/public_html/admin/ajax/locales-ajax.php(128): PDO->exec('UPDATE locales ...')
+#1 {main}
+  thrown in /home/argor/public_html/admin/ajax/locales-ajax.php on line 128
+[16-Sep-2016 20:08:04 America/Chicago] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '30.3%22S+57%C2%B032'38.1%22W/@-25.2417426,-57.5445737,18z/data=!3m1!4b1!4m5!3m4!' at line 1' in /home/argor/public_html/admin/ajax/locales-ajax.php:128
+Stack trace:
+#0 /home/argor/public_html/admin/ajax/locales-ajax.php(128): PDO->exec('UPDATE locales ...')
+#1 {main}
+  thrown in /home/argor/public_html/admin/ajax/locales-ajax.php on line 128
+[16-Sep-2016 20:08:08 America/Chicago] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '30.3%22S+57%C2%B032'38.1%22W/@-25.2417426,-57.5445737,18z/data=!3m1!4b1!4m5!3m4!' at line 1' in /home/argor/public_html/admin/ajax/locales-ajax.php:128
+Stack trace:
+#0 /home/argor/public_html/admin/ajax/locales-ajax.php(128): PDO->exec('UPDATE locales ...')
+#1 {main}
+  thrown in /home/argor/public_html/admin/ajax/locales-ajax.php on line 128
+[10-Jan-2017 14:49:46 America/Chicago] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''''' at line 1' in /home/argor/public_html/admin/ajax/recuperar-pass-ajax.php:32
+Stack trace:
+#0 /home/argor/public_html/admin/ajax/recuperar-pass-ajax.php(32): PDO->exec('UPDATE users se...')
+#1 {main}
+  thrown in /home/argor/public_html/admin/ajax/recuperar-pass-ajax.php on line 32
+[10-Jan-2017 14:49:53 America/Chicago] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''''' at line 1' in /home/argor/public_html/admin/ajax/recuperar-pass-ajax.php:32
+Stack trace:
+#0 /home/argor/public_html/admin/ajax/recuperar-pass-ajax.php(32): PDO->exec('UPDATE users se...')
+#1 {main}
+  thrown in /home/argor/public_html/admin/ajax/recuperar-pass-ajax.php on line 32
+[10-Jan-2017 14:50:12 America/Chicago] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''' at line 1' in /home/argor/public_html/admin/ajax/recuperar-pass-ajax.php:32
+Stack trace:
+#0 /home/argor/public_html/admin/ajax/recuperar-pass-ajax.php(32): PDO->exec('UPDATE users se...')
+#1 {main}
+  thrown in /home/argor/public_html/admin/ajax/recuperar-pass-ajax.php on line 32
+[23-Jan-2017 12:58:48 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/argor/public_html/admin/ajax/formProducto.php:13) in /home/argor/public_html/admin/ajax/formProducto.php on line 65

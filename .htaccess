@@ -1,0 +1,51 @@
+AddDefaultCharset UTF-8
+#Listado de Directorios
+Options -Indexes
+#Quitamos extension de los archivos
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^argor.com.py [NC]
+RewriteRule ^(.*)$ http://www.argor.com.py/$1 [L,R=301]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php
+<IfModule mod_rewrite.c>
+#   Entrada:  id/ofertas/descripcion
+#   Salida: ofertas-categoria.php?id=ID
+RewriteRule ^([0-9]+)/([a-zA-Z0-9-]*)/([a-zA-Z0-9-]*)$ ofertas-categoria.php?id=$1 [L]
+#   Entrada:  id/ofertas/producto/descripcion
+#   Salida: ofertas-producto.php?id=ID
+RewriteRule ^([0-9]+)/([a-zA-Z0-9-]*)/([a-zA-Z0-9-]*)/([a-zA-Z0-9-]*)$ ofertas-producto.php?id=$1 [L]
+#   Entrada:  /ofertas/descripcion-id
+#   Salida: ofertas-detalle.php?id=ID
+RewriteRule ^([a-z_A-Z]*)/([a-z_A-Z]*)\-([0-9]+)$ ofertas-detalle.php?id=$3 [L]
+</IfModule>
+
+#Inyecciones SQL
+RewriteCond %{QUERY_STRING} (;|<|>|’|”|\)|%0A|%0D|%22|%27|%3C|%3E|%00).*(/\*|union|select|insert|cast|set|declare|drop|update|md5|benchmark) [NC,OR]
+RewriteCond %{QUERY_STRING} \.\./\.\. [OR]
+RewriteCond %{QUERY_STRING} (localhost|loopback|127\.0\.0\.1) [NC,OR]
+RewriteCond %{QUERY_STRING} \.[a-z0-9] [NC,OR]
+RewriteCond %{QUERY_STRING} (<|>|’|%0A|%0D|%27|%3C|%3E|%00) [NC]
+RewriteRule .* - [F]
+
+#Bloqueo de agentes y utilidades de línea de comandos
+RewriteCond %{HTTP_USER_AGENT} ^$ [OR]
+RewriteCond %{HTTP_USER_AGENT} ^(java|curl|wget) [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} (winhttp|HTTrack|clshttp|archiver|loader|email|harvest|extract|grab|miner) [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} (libwww-perl|curl|wget|python|nikto|scan) [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} (<|>|’|%0A|%0D|%27|%3C|%3E|%00) [NC]
+RewriteRule .* - [F]
+
+#Inclusión de archivos remotos (RFI) y compañía
+RewriteCond %{REQUEST_METHOD} GET
+RewriteCond %{QUERY_STRING} [a-zA-Z0-9_]=http:// [OR]
+RewriteCond %{QUERY_STRING} [a-zA-Z0-9_]=(\.\.//?)+ [OR]
+RewriteCond %{QUERY_STRING} [a-zA-Z0-9_]=/([a-z0-9_.]//?)+ [NC]
+RewriteRule .* - [F]
+
+# Gzip
+<IfModule mod_deflate.c>
+	AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript text/javascript image/svg+xml image/x-icon image/png image/jpg image/gif image/jpeg application/x-font-opentype application/x-font-truetype application/x-font-ttf application/xml font/eot font/opentype font/otf
+</IfModule>

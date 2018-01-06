@@ -1,0 +1,29 @@
+[10-May-2016 19:23:54 America/Chicago] PHP Fatal error:  Call to undefined function cryp_hash() in /home/argor/public_html/admin/login.php on line 5
+[10-May-2016 19:27:02 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/argor/public_html/admin/login.php:5) in /home/argor/public_html/admin/login.php on line 17
+[10-May-2016 19:32:17 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/argor/public_html/admin/login.php:5) in /home/argor/public_html/admin/login.php on line 17
+[10-May-2016 19:32:43 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/argor/public_html/admin/login.php:5) in /home/argor/public_html/admin/login.php on line 17
+[10-May-2016 19:33:19 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/argor/public_html/admin/login.php:5) in /home/argor/public_html/admin/login.php on line 17
+[10-May-2016 19:33:25 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/argor/public_html/admin/login.php:5) in /home/argor/public_html/admin/login.php on line 17
+[10-May-2016 19:33:44 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/argor/public_html/admin/login.php:5) in /home/argor/public_html/admin/login.php on line 17
+[10-May-2016 19:38:16 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/argor/public_html/admin/login.php:5) in /home/argor/public_html/admin/login.php on line 18
+[10-May-2016 19:39:04 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/argor/public_html/admin/login.php:14) in /home/argor/public_html/admin/login.php on line 17
+[10-May-2016 19:39:32 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/argor/public_html/admin/login.php:14) in /home/argor/public_html/admin/login.php on line 18
+[30-Jan-2017 18:23:24 America/Chicago] PHP Warning:  mysqli::mysqli(): (HY000/2003): Can't connect to MySQL server on 'argor.com.py' (111) in /home/argor/public_html/db-config/database.class.php on line 70
+[30-Jan-2017 18:23:24 America/Chicago] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in /home/argor/public_html/db-config/database.class.php on line 194
+[30-Jan-2017 18:23:25 America/Chicago] PHP Warning:  mysqli::mysqli(): (HY000/2003): Can't connect to MySQL server on 'argor.com.py' (111) in /home/argor/public_html/db-config/database.class.php on line 70
+[30-Jan-2017 18:23:25 America/Chicago] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in /home/argor/public_html/db-config/database.class.php on line 194
+[30-Jan-2017 18:23:28 America/Chicago] PHP Warning:  mysqli::mysqli(): (HY000/2003): Can't connect to MySQL server on 'argor.com.py' (111) in /home/argor/public_html/db-config/database.class.php on line 70
+[30-Jan-2017 18:23:28 America/Chicago] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/argor/public_html/db-config/database.class.php on line 81
+[30-Jan-2017 18:23:28 America/Chicago] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in /home/argor/public_html/db-config/database.class.php on line 194
+[12-Aug-2017 07:56:34 America/Chicago] PHP Warning:  mysqli::mysqli(): (HY000/2005): Unknown MySQL server host 'argor.com.py' (2) in /home/argor/public_html/db-config/database.class.php on line 70
+[12-Aug-2017 07:56:34 America/Chicago] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in /home/argor/public_html/db-config/database.class.php on line 194
+[12-Aug-2017 07:56:51 America/Chicago] PHP Warning:  mysqli::mysqli(): (HY000/2005): Unknown MySQL server host 'argor.com.py' (2) in /home/argor/public_html/db-config/database.class.php on line 70
+[12-Aug-2017 07:56:51 America/Chicago] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in /home/argor/public_html/db-config/database.class.php on line 194
+[12-Aug-2017 07:57:00 America/Chicago] PHP Warning:  mysqli::mysqli(): (HY000/2005): Unknown MySQL server host 'argor.com.py' (2) in /home/argor/public_html/db-config/database.class.php on line 70
+[12-Aug-2017 07:57:00 America/Chicago] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in /home/argor/public_html/db-config/database.class.php on line 194
+[12-Aug-2017 07:58:08 America/Chicago] PHP Warning:  mysqli::mysqli(): (HY000/2005): Unknown MySQL server host 'argor.com.py' (2) in /home/argor/public_html/db-config/database.class.php on line 70
+[12-Aug-2017 07:58:08 America/Chicago] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/argor/public_html/db-config/database.class.php on line 81
+[12-Aug-2017 07:58:08 America/Chicago] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in /home/argor/public_html/db-config/database.class.php on line 194
+[12-Aug-2017 08:01:43 America/Chicago] PHP Warning:  mysqli::mysqli(): (HY000/2005): Unknown MySQL server host 'argor.com.py' (2) in /home/argor/public_html/db-config/database.class.php on line 70
+[12-Aug-2017 08:01:43 America/Chicago] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/argor/public_html/db-config/database.class.php on line 81
+[12-Aug-2017 08:01:43 America/Chicago] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in /home/argor/public_html/db-config/database.class.php on line 194
