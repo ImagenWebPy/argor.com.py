@@ -128,7 +128,6 @@ switch ($actualPage) {
         <link href='<?php echo getUrl(); ?>masterslider/style/ms-staff-style.css' rel='stylesheet' type='text/css'>
         <!-- Google Web fonts -->
         <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,100,200,500,600,800,700,900' rel='stylesheet' type='text/css'><!-- Raleway font -->
-        <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900&amp;subset=cyrillic,cyrillic-ext,latin,greek-ext,greek,latin-ext,vietnamese' rel='stylesheet' type='text/css'><link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900&amp;subset=cyrillic,cyrillic-ext,latin,greek-ext,greek,latin-ext,vietnamese' rel='stylesheet' type='text/css'><!-- Roboto -->
         <!-- Font icons -->
         <script src="https://use.fontawesome.com/58850d4a2e.js"></script>
         <!--<link rel="stylesheet" href="<?php echo getUrl(); ?>font-awesome/css/font-awesome.min.css"/> Font awesome icons -->

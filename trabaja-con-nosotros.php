@@ -5,9 +5,11 @@ $sqlTrabaja = "SELECT * FROM trabaja_con_nosotros WHERE id = 1";
 $db->setQuery($sqlTrabaja);
 $work = $db->loadObject();
 ?>
-<?php if ($_SESSION['DATA'] == true): ?>
-    <div class="alert-box success"><span>Gracias. Se ha enviado su CV con éxito </span>Sus datos fueron guardados en nuestra base de datos para su posterior procesamiento. <!--s<a href="#" id="close_message" style="position: relative; float: right; top: 5px;"><img src="img/close-search.png" alt="cerrar" />--></a></div>
-    <?php $_SESSION['DATA'] = false; ?>
+<?php if (!empty($_SESSION['DATA'])): ?>
+    <?php if ($_SESSION['DATA'] == true): ?>
+        <div class="alert-box success"><span>Gracias. Se ha enviado su CV con éxito </span>Sus datos fueron guardados en nuestra base de datos para su posterior procesamiento. <!--s<a href="#" id="close_message" style="position: relative; float: right; top: 5px;"><img src="img/close-search.png" alt="cerrar" />--></a></div>
+        <?php $_SESSION['DATA'] = false; ?>
+    <?php endif; ?>
 <?php endif; ?>
 <!-- .page-content start -->
 <div class="page-content dark custom-img-background page-trabaja page-title mb-0">

@@ -108,12 +108,12 @@ h4 span, h5 span, h6 span,
 .dl-menuwrapper li > a:not(:only-child):after,
 .dl-menuwrapper li.dl-back:after,
 .master-slider .pi-list li:before {
-    color: #0C79C1;
+    color: #ffcc00;
 }
 .pricing-table-2-col.plan-3 .price p,
 .pricing-table-2-col.plan-3 .price p span,
 .pricing-table-col.selected .price p span{
-    color: #0C79C1 !important;
+    color: #ffcc00 !important;
 }
 strong,
 .service-box-2 h3{
@@ -184,7 +184,7 @@ strong,
 .btn-video:hover,
 .btn.green:hover,
 .widget_search .search-submit:hover {
-    background-color: #0C79C1;
+    background-color: #ffcc00;
 }
 
 .rpw_posts_widget li .comment-container .comment-number {

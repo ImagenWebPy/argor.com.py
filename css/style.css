@@ -59,7 +59,12 @@
         15. FOOTER
             15.1. FOOTER STYLE 2
 */
-
+@font-face {
+    font-family: 'MyriadPro';
+    src: url('../fuente/MyriadWebPro.eot?#iefix') format('embedded-opentype'),  url('../fuente/MyriadWebPro.woff') format('woff'), url('../fuente/MyriadWebPro.ttf')  format('truetype'), url('../fuente/MyriadWebPro.svg#MyriadWebPro') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 /* ==========================================================================
     1. CEE RESET
     ========================================================================= */
@@ -200,7 +205,7 @@ strong.hint--top {
     2. DOCUMENT STYLES
     ========================================================================= */
 body {
-    font-family: 'Roboto', Arial, sans-serif;
+    font-family: 'MyriadPro';
     font-size: 14px;
     line-height: 23px;
     color: #959595;
@@ -333,7 +338,7 @@ p,
 a,
 span {
     color: #959595;
-    font-family: 'Roboto', Arial, sans-serif;
+    font-family: 'MyriadPro', Arial, sans-serif;
     line-height: 23px;
 }
 p {
@@ -364,7 +369,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Roboto', 'Roboto', Arial, sans-serif;
+    font-family: 'MyriadPro';
     font-weight: 300;
     color: #363636;
     margin-top: 0;
@@ -767,11 +772,11 @@ blockquote + p {
 #header .navbar-default .navbar-nav > li > a {
     border: none;
     border-top: 2px solid transparent;
-    font-family: 'Roboto', Arial, sans-serif;
+    font-family: 'MyriadPro', Arial, sans-serif;
     font-size: 12px;
     font-weight: 700;
     text-transform: uppercase;
-    color: #636363;
+    color: #1d1d1b;
 }
 #header .navbar-default .navbar-nav > .current-menu-item > a,
 #header .navbar-default .navbar-nav > li > a:hover,
@@ -1290,7 +1295,7 @@ blockquote + p {
     padding-top: 140px;
 }
 .bkg-darkgrey {
-    background-color: #363636 !important;
+    background-color: #1d1d1b !important;
 }
 .bkg-grey {
     background-color: #fafafa !important;
@@ -1320,7 +1325,7 @@ blockquote + p {
     background-color: #8560a8 !important;
 }
 .bkg-green {
-    background-color: #0C79C1 !important;
+    background-color: #ffcc00 !important;
 }
 .bkg-pink {
     background-color: #e887d7 !important;
@@ -1675,7 +1680,7 @@ blockquote + p {
     border-color: #fff;
 }
 .btn.black {
-    background-color: #363636;
+    background-color: #1d1d1b;
 }
 .btn.pink {
     background-color: #f26d7d;
@@ -1915,7 +1920,7 @@ body,
 .custom-heading h6 {
     font-weight: 600;
     border-bottom: 2px solid #363636;
-    color: #363636;
+    color: #1d1d1b;
     padding-bottom: 15px;
     margin-bottom: 30px;
 }
@@ -2128,7 +2133,7 @@ body,
 .service-box-3 .icon-container {
     width: 70px;
     height: 70px;
-    background-color: #363636;
+    background-color: #1d1d1b;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -2163,7 +2168,7 @@ body,
 .service-box-1 h6,
 .service-box-2 h6,
 .service-box-3 h6 {
-    font-family: 'Roboto', Arial, sans-serif;
+    font-family: 'MyriadPro', Arial, sans-serif;
     margin-bottom: 10px;
     -webkit-transition: all 0.2s ease 0s;
     -moz-transition: all 0.2s ease 0s;
@@ -2342,13 +2347,13 @@ body,
 .master-slider .slide-text-box {
     top: 32% !important;
     width: 57%;
-    background-color: #0C79C1;
+    background-color: #1d1d1b;
     height: 36%;
 }
 .master-slider .slide-text-box:before {
     border-left: transparent solid 36px;
     border-top: solid transparent 36px;
-    border-right: solid #0C79C1 36px;
+    border-right: solid #1d1d1b 36px;
     bottom: 0;
     top: -36px;
     content: " ";
@@ -2357,7 +2362,7 @@ body,
     position: absolute;
 }
 .master-slider .pi-caption01 {
-    color: #fff;
+    color: #ffcc00;
     font-size: 52px;
     line-height: 52px;
 }
@@ -4714,10 +4719,10 @@ ul.portfolio-item-buttons {
     resize: none;
 }
 .wpcf7 .wpcf7-submit {
-    color: #fff;
+    color: #1d1d1b;
     border: none;
     margin-top: 30px;
-    font-weight: 400;
+    font-weight: bold;
     -webkit-transition: all 0.2s ease 0s;
     -moz-transition: all 0.2s ease 0s;
     -o-transition: all 0.2s ease 0s;
@@ -5162,7 +5167,7 @@ ul.aside-widgets {
 ========================================================================= */
 #footer-wrapper {
     position: relative;
-    background-color: #252525;
+    background-color: #1d1d1b;
     width: 100%;
     padding-top: 80px;
 }

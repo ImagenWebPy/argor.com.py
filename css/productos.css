@@ -70,15 +70,14 @@
     padding-bottom: 20px;
 }
 .button {
-    font-family: DIN, Helvetica, Arial, sans-serif;
+    font-family: 'MyriadPro';
     border: 1px #ddd solid;
-    background: #fff;
+    background: #1d1d1b;
     padding: 7px 12px;
     margin-bottom: 15px;
     transition: color 300ms ease-in-out 0s, background-color 300ms ease-in-out 0s, background-position 300ms ease-in-out 0s;
 }
 .button:hover {
-    background: #b5d0f3;
     padding: 7px 12px;
     color: #FFF !important;
 }
@@ -2201,9 +2200,11 @@ fieldset {
     background: #333333;
     border-radius: 2px
 }
-.product-name a {    color: #282828;
-                     font-weight: bold;
-                     text-decoration: none;}
+.product-name a {    
+    font-family: 'MyriadPro';
+    color: #282828;
+    font-weight: bold;
+    text-decoration: none;}
 .floatNone{ float: none;}
 .alert-info {
     color: #31708f;
