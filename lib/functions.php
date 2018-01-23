@@ -13,8 +13,11 @@
  * @return string Retorna la url actual
  */
 function getUrl() {
-    //$url = "http://" . $_SERVER['HTTP_HOST'] . '/argor.com.py/';
-    $url = "http://" . $_SERVER['HTTP_HOST'] . '/';
+    if ($_SERVER['HTTP_HOST'] == 'localhost') {
+        $url = "http://" . $_SERVER['HTTP_HOST'] . '/argor.com.py/';
+    } else {
+        $url = "http://" . $_SERVER['HTTP_HOST'] . '/';
+    }
     return $url;
 }
 
@@ -71,10 +74,10 @@ function input_special($data) {
 function login($session) {
     var_dump($session);
     if (!isset($session)) {
-        //header('Location:admin/');
+//header('Location:admin/');
         echo 'no se logueo';
     } else {
-        //header('Location:admin/#dashboard');
+//header('Location:admin/#dashboard');
         echo 'si';
     }
 }
@@ -168,7 +171,7 @@ function caracteres($string) {
             array('ñ', 'Ñ', 'ç', 'Ç'), array('n', 'N', 'c', 'C',), $string
     );
 
-    //Esta parte se encarga de eliminar cualquier caracter extraño
+//Esta parte se encarga de eliminar cualquier caracter extraño
     $string = str_replace(
             array("/\/", "¨", "º", "-", "~", "#", "@", "|", "!", "·", "$", "%", "&", "/", "(", ")", "?", "'", "¡", "¿", "[", "^", "<code>", "]", "+", "}", "{", "¨", "´", ">", "< ", ";", ",", ":", ".", " "), '', $string);
 
@@ -265,7 +268,7 @@ function menuPlus($padre, $nivel) {
     foreach ($result as $row) {
         if ($row->Count > 0) {
             echo "<li class='floatNone'><a href='" . getUrl() . $row->id . '/ofertas/' . utf8_encode($row->url_rewrite) . "'><span>" . utf8_encode($row->descripcion) . "</span></a>";
-            //$new_sub->subMenuPlus($row['id'], $nivel + 1);
+//$new_sub->subMenuPlus($row['id'], $nivel + 1);
             echo "</li>";
         } elseif ($row->Count == 0) {
             echo "<li class='floatNone'><a href='" . getUrl() . $row->id . '/ofertas/' . utf8_encode($row->url_rewrite) . "'><span>" . utf8_encode($row->descripcion) . "</span></a></li>";

@@ -62,7 +62,7 @@ $locales = $db->loadObjectList();
                                         <?php endif; ?>
                                     </ul>
                                     <?php if (!empty($local->img_local)): ?>
-                                    <img src="<?php echo getUrl() . 'img/sucursales/' . $local->img_local; ?>" class="img-responsive" />
+                                    <!--<img src="<?php echo getUrl() . 'img/sucursales/' . $local->img_local; ?>" class="img-responsive" />-->
                                     <?php endif; ?>
                                 </div>
                                 <div class="col-md-7" style="padding-top: 20px;">
