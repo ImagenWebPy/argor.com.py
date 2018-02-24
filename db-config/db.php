@@ -14,9 +14,14 @@
  * PRODUCCION CONNECTION
  * ********************
  */
+//define('DB_HOST', 'argor.com.py');
+//define('DB_NAME', 'argor_db');
+//define('DB_USER', 'argor_user');
+//define('DB_PASS', ')%LyAX-r8c@Jd@en');
+//define('DB_PREFIX', '');
 define('DB_HOST', 'argor.com.py');
 define('DB_NAME', 'argor_db');
-define('DB_USER', 'argor_user');
-define('DB_PASS', ')%LyAX-r8c@Jd@en');
+define('DB_USER', 'web_desa');
+define('DB_PASS', 'DesaIWEB123321');
 define('DB_PREFIX', '');
 

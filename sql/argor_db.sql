@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tiempo de generación: 06-01-2018 a las 11:18:26
+-- Tiempo de generación: 24-02-2018 a las 10:24:10
 -- Versión del servidor: 5.5.47-cll
 -- Versión de PHP: 5.4.31
 
@@ -41,11 +41,6 @@ CREATE TABLE IF NOT EXISTS `banner` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
 
 --
--- Truncar tablas antes de insertar `banner`
---
-
-TRUNCATE TABLE `banner`;
---
 -- Volcado de datos para la tabla `banner`
 --
 
@@ -69,11 +64,6 @@ CREATE TABLE IF NOT EXISTS `busqueda_sitio` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
---
--- Truncar tablas antes de insertar `busqueda_sitio`
---
-
-TRUNCATE TABLE `busqueda_sitio`;
 -- --------------------------------------------------------
 
 --
@@ -92,11 +82,6 @@ CREATE TABLE IF NOT EXISTS `categoria` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=96 ;
 
---
--- Truncar tablas antes de insertar `categoria`
---
-
-TRUNCATE TABLE `categoria`;
 --
 -- Volcado de datos para la tabla `categoria`
 --
@@ -216,11 +201,6 @@ CREATE TABLE IF NOT EXISTS `categorias` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=9 ;
 
 --
--- Truncar tablas antes de insertar `categorias`
---
-
-TRUNCATE TABLE `categorias`;
---
 -- Volcado de datos para la tabla `categorias`
 --
 
@@ -251,11 +231,6 @@ CREATE TABLE IF NOT EXISTS `ciudad` (
   KEY `fk_id_departamento_idx` (`id_departamento`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
---
--- Truncar tablas antes de insertar `ciudad`
---
-
-TRUNCATE TABLE `ciudad`;
 -- --------------------------------------------------------
 
 --
@@ -283,11 +258,6 @@ CREATE TABLE IF NOT EXISTS `contacto` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
 --
--- Truncar tablas antes de insertar `contacto`
---
-
-TRUNCATE TABLE `contacto`;
---
 -- Volcado de datos para la tabla `contacto`
 --
 
@@ -308,11 +278,6 @@ CREATE TABLE IF NOT EXISTS `corporativos_locales` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=20 ;
 
---
--- Truncar tablas antes de insertar `corporativos_locales`
---
-
-TRUNCATE TABLE `corporativos_locales`;
 --
 -- Volcado de datos para la tabla `corporativos_locales`
 --
@@ -354,11 +319,6 @@ CREATE TABLE IF NOT EXISTS `cotizacion_moneda` (
   KEY `fk_moneda_id_idx` (`id_moneda`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
---
--- Truncar tablas antes de insertar `cotizacion_moneda`
---
-
-TRUNCATE TABLE `cotizacion_moneda`;
 -- --------------------------------------------------------
 
 --
@@ -376,13 +336,8 @@ CREATE TABLE IF NOT EXISTS `cv` (
   `leido` int(1) NOT NULL DEFAULT '0',
   `oculto` int(1) DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=411 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=433 ;
 
---
--- Truncar tablas antes de insertar `cv`
---
-
-TRUNCATE TABLE `cv`;
 --
 -- Volcado de datos para la tabla `cv`
 --
@@ -798,7 +753,29 @@ INSERT INTO `cv` (`id`, `nombre`, `email`, `telefono`, `mensaje`, `archivo`, `le
 (407, 'Ana Belen Ramirez Ojeda', 'anabelen.ramirez95@gmail.com', '0993569257', 'Buenas Tardes. Me encantaría trabajar con ustedes y por sobre todo con ganas de crecer profesionalmente.', 'Curriculum Belén Original.doc', 0, 0),
 (408, 'Viviana Mariel Báez Recalde', 'vivianamariel@hotmail.com', '0984158510', 'Estimado/a:\r\nRRHH, ARGOR\r\n \r\nEs muy grato para mí, enviar en adjunto mi currículo, mi nombre es Viviana Mariel Báez Recalde, estoy en busca de nuevas oportunidades laborales.\r\n \r\nPongo a su consideración mis datos para lo que hubiere lugar.\r\nAtentamente\r\n \r\nViviana Báez', 'CV Viviana Baez.docx', 0, 0),
 (409, 'Clara Jannina Almada Sanchez', 'jannina.ninasanchez@gmail.com', '0981359918', '', 'cv nina.docx', 0, 0),
-(410, 'Gustavo Adolfo Sánchez Acosta', 'gasanchez74@gmail.com', '+58 4169707403', 'Saludos, sres. \r\n\r\n\r\n      Soy Gustavo Sánchez. Estoy interesado en trabajar con ustedes.\r\n\r\n\r\n       Soy Oficial retirado del Ejército Venezolano, con el grado de Mayor;  Especialista en Seguridad Física de Instalaciones y Personalidades (desde 1997, 20 años de experiencia comprobable en el área).\r\n\r\n     \r\n\r\n       Actualmente estoy en Caracas Venezuela con todos mis documentos debidamente LEGALIZADOS Y APOSTILLADOS, tengo  DISPONIBILIDAD INMEDIATA (llego a Asunción el 18 de enero 2018) para trabajar y radicarme legalmente (Radicación Permanente).\r\n\r\n\r\n       Agradezco me sea tomado en cuenta para este cargo una vez analizado mi CV y la respectiva entrevista. \r\n\r\n\r\n     Atentamente\r\n\r\n                My. Gustavo Sánchez Acosta\r\n\r\n\r\n\r\nWhatssap +58 4169707403\r\n\r\nmail            gasanchez74@gmail.com\r\n\r\nTwitter       @gasanchezacosta', 'CV GUSTAVO SANCHEZ A OCT17.pdf', 0, 0);
+(410, 'Gustavo Adolfo Sánchez Acosta', 'gasanchez74@gmail.com', '+58 4169707403', 'Saludos, sres. \r\n\r\n\r\n      Soy Gustavo Sánchez. Estoy interesado en trabajar con ustedes.\r\n\r\n\r\n       Soy Oficial retirado del Ejército Venezolano, con el grado de Mayor;  Especialista en Seguridad Física de Instalaciones y Personalidades (desde 1997, 20 años de experiencia comprobable en el área).\r\n\r\n     \r\n\r\n       Actualmente estoy en Caracas Venezuela con todos mis documentos debidamente LEGALIZADOS Y APOSTILLADOS, tengo  DISPONIBILIDAD INMEDIATA (llego a Asunción el 18 de enero 2018) para trabajar y radicarme legalmente (Radicación Permanente).\r\n\r\n\r\n       Agradezco me sea tomado en cuenta para este cargo una vez analizado mi CV y la respectiva entrevista. \r\n\r\n\r\n     Atentamente\r\n\r\n                My. Gustavo Sánchez Acosta\r\n\r\n\r\n\r\nWhatssap +58 4169707403\r\n\r\nmail            gasanchez74@gmail.com\r\n\r\nTwitter       @gasanchezacosta', 'CV GUSTAVO SANCHEZ A OCT17.pdf', 0, 0),
+(411, 'JUAN GABRIEL CACERES GONZALEZ', 'juanyayel@hotmail.com', '0986510261', 'Estudiante de ADMINISTRACIÓN busca oportunidad laboral para cubrir costos de tesis final', 'Curriculum Vitae (Juan Caceres).pdf', 0, 0),
+(412, 'Christian Ruben caffarena nuñez', 'christiancaffa92@gmail.com', '0994530280', 'Me interesa mucho trabajar soy bueno con Muchas ganas de salir adelante', '20180118_171631.jpg', 0, 0),
+(413, 'Guadalupe Concepción', 'gfernandezlo29@gmail.com', '0961160756', '', 'Mi CV.pdf', 0, 0),
+(414, 'Tamara Yanina Ozuna Torres', 'tamaraozuna05@gmail.com', '+595983668154', '', 'Documento curriculum vitae TAMARA.docx', 0, 0),
+(415, 'Edilberto antonio lobos cabrera', 'Loboskbrera@gmail.com', '0984551677', 'Necesito trabajo', 'Curricu 1.pdf', 0, 0),
+(416, 'Edilberto antonio lobos cabrera', 'Loboskbrera@gmail.com', '0984551677', 'Necesito trabajo', 'Curricu 1.pdf', 0, 0),
+(417, 'Guadalupe Judith Dos Santos Colmán', 'guadadossantos_@hotmail.com', '0991896550', '', 'Curriculum - Guadalupe Dos Santos.pdf', 0, 0),
+(418, 'Dana Cristina Otazo', 'otazodana@gmail.com', '0991382292', '', 'C.V DANA.doc', 0, 0),
+(419, 'Edilberto antonio lobos cabrera', 'Loboskbrera@gmail.com', '0984551677', '', 'Curricu 1.pdf', 0, 0),
+(420, 'Ariel Omar González Colman', 'arielgz.2812@gmail.com', '528859', 'Solicitud de empleo', 'DOC-20180201-WA0005.pdf', 0, 0),
+(421, 'Diana Elizabeth Dominguez', 'd.e.dominguez@hotmail.com', '0992785615', 'Vacante disponible', 'Diana CV.pdf', 0, 0),
+(422, 'Fabio Román Osorio', 'fabeto99@gmail.com', '0994959576', '', 'CURRICULUM FABIO ROMAN OSORIO.docx', 0, 0),
+(423, 'KATRINA ADRIANA DUARTE UIBRIG', 'katriduarte@hotmail.com', '0984326441', 'BUSCO TRABAJO PARA CUALQUIER AREA QUE HAYA VACANCIA! PROBLEMAS FAMILIARES, ECONOMICOS! ETC.', 'CURRICULUM VITAE KATRINA ADRIANA DUARTE 2014.doc', 0, 0),
+(424, 'Héctor María Cáceres Fernández', 'villalbamartha82@gmail.com', '0984215347', '', 'Curriculum HECTOR.docx', 0, 0),
+(425, 'Danna Victoria Sanabria Valdovino', 'dannaxdd@hormail.com', '0971902503', 'Espero su llamada!', 'Danna 1 CV.pdf', 0, 0),
+(426, 'karina giselle centurion', 'karigcg@gmail.com', '0992428462/0984754756', 'Buenas tardes.\r\nRemito mi curriculum para lo que hubiere lugar, tengo experiencia en analisis de creditos, cobranzas, ventas. Soy una persona proactiva y responsable, hasta incluso me ofrezco para un periodo de prueba si necesitan.\r\n\r\nSaludos', 'CV2018KC.doc', 0, 0),
+(427, 'Valeria Reyes', 'lujanreyes.lr@gmail.com', '021587595', 'Tengo 18 años. Soy responsable, tengo ganas de trabajar y aportar en lo que sea necesario y tengo buena disponibilidad de tiempo. Espero su respuesta', 'valeria reyes...docx', 0, 0),
+(428, 'Gabriel Alejandro Centurión', 'galece77@gmail.com', '0971382998', 'Adjunto.', 'CURRICULUMINFORMATICOGABRIELCENTURION.pdf', 0, 0),
+(429, 'fabian Enrique garcete', 'fabiangarcete@hotmail.com', '0994108189', 'soy chofer gestor documentos al dia busco trabajo con sueldo fijo o más entendido en varias áreas sin problemas de horario. con conocimiento de toda la area central', 'CURRICULUM_FABIAN garcete.pdf', 0, 0),
+(430, 'Flavia Fernanda Franco Martinez', 'flaviafer86@gmail.com', '0982603641', 'lic administracion de empresas', 'CURRI FERNANDA.pdf', 0, 0),
+(431, 'Flavia Fernanda Franco Martinez', 'flaviafer86@gmail.com', '0982603641', 'lic administracion de empresas', 'CURRI FERNANDA.pdf', 0, 0),
+(432, 'Natalia Ines Jara Guachire', 'nattyjaraguachire02@gmail.com', '0992826669', 'Buenas Noches  Enel adjunto les envio mi c.v. con mi perfil personal.\r\nquedo atenta ante una pronta y favorable respuesta de vuestra parte \r\nsaludos cordiales \r\nNATALIA JARA...', 'C.V. Natalia Jara 2018 -.docx', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -814,11 +791,6 @@ CREATE TABLE IF NOT EXISTS `departamento` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
---
--- Truncar tablas antes de insertar `departamento`
---
-
-TRUNCATE TABLE `departamento`;
 -- --------------------------------------------------------
 
 --
@@ -833,11 +805,6 @@ CREATE TABLE IF NOT EXISTS `forma_pago` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
---
--- Truncar tablas antes de insertar `forma_pago`
---
-
-TRUNCATE TABLE `forma_pago`;
 -- --------------------------------------------------------
 
 --
@@ -856,11 +823,6 @@ CREATE TABLE IF NOT EXISTS `forma_pago_productos` (
   KEY `idx_local_producto_pago_idx` (`id_locales`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
---
--- Truncar tablas antes de insertar `forma_pago_productos`
---
-
-TRUNCATE TABLE `forma_pago_productos`;
 -- --------------------------------------------------------
 
 --
@@ -884,11 +846,6 @@ CREATE TABLE IF NOT EXISTS `la_empresa` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
---
--- Truncar tablas antes de insertar `la_empresa`
---
-
-TRUNCATE TABLE `la_empresa`;
 --
 -- Volcado de datos para la tabla `la_empresa`
 --
@@ -918,11 +875,6 @@ CREATE TABLE IF NOT EXISTS `locales` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=18 ;
 
---
--- Truncar tablas antes de insertar `locales`
---
-
-TRUNCATE TABLE `locales`;
 --
 -- Volcado de datos para la tabla `locales`
 --
@@ -961,11 +913,6 @@ CREATE TABLE IF NOT EXISTS `logo` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
 --
--- Truncar tablas antes de insertar `logo`
---
-
-TRUNCATE TABLE `logo`;
---
 -- Volcado de datos para la tabla `logo`
 --
 
@@ -987,11 +934,6 @@ CREATE TABLE IF NOT EXISTS `marca` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=110 ;
 
---
--- Truncar tablas antes de insertar `marca`
---
-
-TRUNCATE TABLE `marca`;
 --
 -- Volcado de datos para la tabla `marca`
 --
@@ -1123,11 +1065,6 @@ CREATE TABLE IF NOT EXISTS `moneda` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
 
 --
--- Truncar tablas antes de insertar `moneda`
---
-
-TRUNCATE TABLE `moneda`;
---
 -- Volcado de datos para la tabla `moneda`
 --
 
@@ -1171,11 +1108,6 @@ CREATE TABLE IF NOT EXISTS `producto` (
   KEY `fk_id_moneda_idx` (`id_moneda`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=128 ;
 
---
--- Truncar tablas antes de insertar `producto`
---
-
-TRUNCATE TABLE `producto`;
 --
 -- Volcado de datos para la tabla `producto`
 --
@@ -1327,11 +1259,6 @@ CREATE TABLE IF NOT EXISTS `productos` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
 
 --
--- Truncar tablas antes de insertar `productos`
---
-
-TRUNCATE TABLE `productos`;
---
 -- Volcado de datos para la tabla `productos`
 --
 
@@ -1359,11 +1286,6 @@ CREATE TABLE IF NOT EXISTS `producto_locales` (
   KEY `idx_moneda_producto_local_idx` (`id_moneda`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
---
--- Truncar tablas antes de insertar `producto_locales`
---
-
-TRUNCATE TABLE `producto_locales`;
 -- --------------------------------------------------------
 
 --
@@ -1381,11 +1303,6 @@ CREATE TABLE IF NOT EXISTS `producto_seleccionado` (
   KEY `fk_id_seccion_index_mv_idx` (`id_seccion_producto`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=14 ;
 
---
--- Truncar tablas antes de insertar `producto_seleccionado`
---
-
-TRUNCATE TABLE `producto_seleccionado`;
 --
 -- Volcado de datos para la tabla `producto_seleccionado`
 --
@@ -1420,11 +1337,6 @@ CREATE TABLE IF NOT EXISTS `proveedor` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
---
--- Truncar tablas antes de insertar `proveedor`
---
-
-TRUNCATE TABLE `proveedor`;
 -- --------------------------------------------------------
 
 --
@@ -1441,11 +1353,6 @@ CREATE TABLE IF NOT EXISTS `redes_sociales` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=15 ;
 
---
--- Truncar tablas antes de insertar `redes_sociales`
---
-
-TRUNCATE TABLE `redes_sociales`;
 --
 -- Volcado de datos para la tabla `redes_sociales`
 --
@@ -1484,16 +1391,11 @@ CREATE TABLE IF NOT EXISTS `remate` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
 --
--- Truncar tablas antes de insertar `remate`
---
-
-TRUNCATE TABLE `remate`;
---
 -- Volcado de datos para la tabla `remate`
 --
 
 INSERT INTO `remate` (`id`, `titulo`, `fecha_remate`, `contenido`, `fecha`, `mostrar`) VALUES
-(1, 'Próximo Remate:', '2017-12-09 00:00:00', '', '2015-12-13 12:48:43', 1);
+(1, 'Próximo Remate:', '2018-03-03 00:00:00', '', '2015-12-13 12:48:43', 1);
 
 -- --------------------------------------------------------
 
@@ -1513,11 +1415,6 @@ CREATE TABLE IF NOT EXISTS `secciones` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=7 ;
 
---
--- Truncar tablas antes de insertar `secciones`
---
-
-TRUNCATE TABLE `secciones`;
 --
 -- Volcado de datos para la tabla `secciones`
 --
@@ -1545,11 +1442,6 @@ CREATE TABLE IF NOT EXISTS `seccion_producto` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
 
 --
--- Truncar tablas antes de insertar `seccion_producto`
---
-
-TRUNCATE TABLE `seccion_producto`;
---
 -- Volcado de datos para la tabla `seccion_producto`
 --
 
@@ -1576,16 +1468,11 @@ CREATE TABLE IF NOT EXISTS `section_1` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
 --
--- Truncar tablas antes de insertar `section_1`
---
-
-TRUNCATE TABLE `section_1`;
---
 -- Volcado de datos para la tabla `section_1`
 --
 
 INSERT INTO `section_1` (`id`, `titulo`, `encabezado_1`, `encabezado_2`, `mostrar`) VALUES
-(1, '¿Necesitás Dinero?', 'Argor Empeños te ofrece lo que estas buscando:', '¡El interés más bajo del mercado!', 1);
+(1, '¿Necesitás Dinero?', 'Argor Empeños te ofrece lo que estas buscando:', '<p>+ Dinero + Seguridad<br></p>', 1);
 
 -- --------------------------------------------------------
 
@@ -1605,11 +1492,6 @@ CREATE TABLE IF NOT EXISTS `section_1_lista` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
 
---
--- Truncar tablas antes de insertar `section_1_lista`
---
-
-TRUNCATE TABLE `section_1_lista`;
 --
 -- Volcado de datos para la tabla `section_1_lista`
 --
@@ -1639,11 +1521,6 @@ CREATE TABLE IF NOT EXISTS `section_2` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
 --
--- Truncar tablas antes de insertar `section_2`
---
-
-TRUNCATE TABLE `section_2`;
---
 -- Volcado de datos para la tabla `section_2`
 --
 
@@ -1667,11 +1544,6 @@ CREATE TABLE IF NOT EXISTS `section_3` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
 --
--- Truncar tablas antes de insertar `section_3`
---
-
-TRUNCATE TABLE `section_3`;
---
 -- Volcado de datos para la tabla `section_3`
 --
 
@@ -1691,11 +1563,6 @@ CREATE TABLE IF NOT EXISTS `section_3_lista` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=6 ;
 
---
--- Truncar tablas antes de insertar `section_3_lista`
---
-
-TRUNCATE TABLE `section_3_lista`;
 --
 -- Volcado de datos para la tabla `section_3_lista`
 --
@@ -1723,11 +1590,6 @@ CREATE TABLE IF NOT EXISTS `section_4` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
 --
--- Truncar tablas antes de insertar `section_4`
---
-
-TRUNCATE TABLE `section_4`;
---
 -- Volcado de datos para la tabla `section_4`
 --
 
@@ -1754,16 +1616,11 @@ CREATE TABLE IF NOT EXISTS `section_5` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
 --
--- Truncar tablas antes de insertar `section_5`
---
-
-TRUNCATE TABLE `section_5`;
---
 -- Volcado de datos para la tabla `section_5`
 --
 
 INSERT INTO `section_5` (`id`, `titulo`, `contenido`, `texto_enlace`, `img`, `mostrar`, `nro_whatsapp`, `texto_whatsapp`) VALUES
-(1, '¿Estás listo para empeñar?', '<p>\n                    Ahora es mucho más fácil tasar tus productos, para ello nos amigamos con la tecnología y ya puedes tasar tus productos enviándonos una foto del mismo.</p>', 'Tasar Ahora', 'bkg-img4.jpg', 1, '0974-530000', 'Obten una tasación al instante con un simple mensaje de Whatsapp. Envia YA las fotos de lo quieras tasar!');
+(1, '¿Estás listo para empeñar?', '<p>\n                    Ahora es mucho más fácil tasar tus productos, para ello nos amigamos con la tecnología y ya puedes tasar tus productos enviándonos una foto del mismo.</p>', 'Tasar Ahora', 'bkg-img4.jpg', 1, '0974-530000', 'Obtene una tasación al instante con un simple mensaje de Whatsapp. Envia YA las fotos de lo quieras tasar!');
 
 -- --------------------------------------------------------
 
@@ -1780,11 +1637,6 @@ CREATE TABLE IF NOT EXISTS `section_6` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
---
--- Truncar tablas antes de insertar `section_6`
---
-
-TRUNCATE TABLE `section_6`;
 --
 -- Volcado de datos para la tabla `section_6`
 --
@@ -1811,16 +1663,11 @@ CREATE TABLE IF NOT EXISTS `section_7` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
 --
--- Truncar tablas antes de insertar `section_7`
---
-
-TRUNCATE TABLE `section_7`;
---
 -- Volcado de datos para la tabla `section_7`
 --
 
 INSERT INTO `section_7` (`id`, `titulo`, `contenido`, `nombre_sucursal`, `datos_sucursal`, `texto_sucursal`, `mostrar`) VALUES
-(1, '¿Necesitas una solución urgente a tus problemas?', 'Nosotros te la brindamos. ABRIMOS LAS 24 HORAS', 'Sucursal Asunción', 'Avda. Eusebio Ayala c/ Calle 1811<br>Teléfono: 203 040<br>Domingos y feriados<br><br>', 'Abierto las 24 horas', 1);
+(1, '¿Necesitas una solución urgente a tus problemas?', 'Nosotros te la brindamos. ABRIMOS LAS 24 HORAS', 'Sucursal Club Guaraní', 'Avda. Eusebio Ayala c/ Calle 1811<br>Teléfono: 203 040<br>Domingos y feriados<br><br>', 'Abierto las 24 horas', 1);
 
 -- --------------------------------------------------------
 
@@ -1836,11 +1683,6 @@ CREATE TABLE IF NOT EXISTS `tags` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=9 ;
 
---
--- Truncar tablas antes de insertar `tags`
---
-
-TRUNCATE TABLE `tags`;
 --
 -- Volcado de datos para la tabla `tags`
 --
@@ -1871,11 +1713,6 @@ CREATE TABLE IF NOT EXISTS `trabaja_con_nosotros` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Truncar tablas antes de insertar `trabaja_con_nosotros`
---
-
-TRUNCATE TABLE `trabaja_con_nosotros`;
---
 -- Volcado de datos para la tabla `trabaja_con_nosotros`
 --
 
@@ -1900,11 +1737,6 @@ CREATE TABLE IF NOT EXISTS `users` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
 
---
--- Truncar tablas antes de insertar `users`
---
-
-TRUNCATE TABLE `users`;
 --
 -- Volcado de datos para la tabla `users`
 --
